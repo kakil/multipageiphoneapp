@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9602121A2A2BB44E00DD1F4A /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960212192A2BB44E00DD1F4A /* UserProgress.swift */; };
 		9667A2C22A27A67200026257 /* MultiPage_iPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667A2C12A27A67200026257 /* MultiPage_iPhoneApp.swift */; };
 		9667A2C42A27A67200026257 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667A2C32A27A67200026257 /* ContentView.swift */; };
 		9667A2C62A27A67400026257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9667A2C52A27A67400026257 /* Assets.xcassets */; };
 		9667A2C92A27A67400026257 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9667A2C82A27A67400026257 /* Preview Assets.xcassets */; };
+		9667A2D52A27B7BA00026257 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667A2D42A27B7BA00026257 /* MyPageView.swift */; };
+		9667A2D82A27B8F800026257 /* PageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667A2D72A27B8F800026257 /* PageType.swift */; };
+		9667A2DB2A27BDA800026257 /* MyPageControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667A2DA2A27BDA800026257 /* MyPageControllerView.swift */; };
+		9667A2DD2A27BFE900026257 /* PageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667A2DC2A27BFE900026257 /* PageButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960212192A2BB44E00DD1F4A /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
 		9667A2BE2A27A67200026257 /* MultiPage iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MultiPage iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9667A2C12A27A67200026257 /* MultiPage_iPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPage_iPhoneApp.swift; sourceTree = "<group>"; };
 		9667A2C32A27A67200026257 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9667A2C52A27A67400026257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9667A2C82A27A67400026257 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9667A2D42A27B7BA00026257 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		9667A2D72A27B8F800026257 /* PageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageType.swift; sourceTree = "<group>"; };
+		9667A2DA2A27BDA800026257 /* MyPageControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageControllerView.swift; sourceTree = "<group>"; };
+		9667A2DC2A27BFE900026257 /* PageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		9667A2C02A27A67200026257 /* MultiPage iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				9667A2D92A27B90400026257 /* Data */,
+				9667A2D62A27B82600026257 /* Views */,
 				9667A2C12A27A67200026257 /* MultiPage_iPhoneApp.swift */,
-				9667A2C32A27A67200026257 /* ContentView.swift */,
 				9667A2C52A27A67400026257 /* Assets.xcassets */,
 				9667A2C72A27A67400026257 /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				9667A2C82A27A67400026257 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9667A2D62A27B82600026257 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9667A2D42A27B7BA00026257 /* MyPageView.swift */,
+				9667A2C32A27A67200026257 /* ContentView.swift */,
+				9667A2DA2A27BDA800026257 /* MyPageControllerView.swift */,
+				9667A2DC2A27BFE900026257 /* PageButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9667A2D92A27B90400026257 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9667A2D72A27B8F800026257 /* PageType.swift */,
+				960212192A2BB44E00DD1F4A /* UserProgress.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9667A2DB2A27BDA800026257 /* MyPageControllerView.swift in Sources */,
+				9667A2DD2A27BFE900026257 /* PageButtonView.swift in Sources */,
+				9667A2D82A27B8F800026257 /* PageType.swift in Sources */,
 				9667A2C42A27A67200026257 /* ContentView.swift in Sources */,
 				9667A2C22A27A67200026257 /* MultiPage_iPhoneApp.swift in Sources */,
+				9602121A2A2BB44E00DD1F4A /* UserProgress.swift in Sources */,
+				9667A2D52A27B7BA00026257 /* MyPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

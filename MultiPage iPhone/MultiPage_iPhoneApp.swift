@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct MultiPage_iPhoneApp: App {
+    
+    @AppStorage(wrappedValue: false, UserProgress.shownMultiplePages)
+    private var shownMultiplePages
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            if (!shownMultiplePages) {
+                MyPageControllerView()
+            } else {
+                ContentView()
+            }
+            
         }
     }
 }
